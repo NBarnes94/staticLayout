@@ -1,0 +1,51 @@
+html, body{
+    margin: 0;
+    padding: 0;
+}
+html{
+    width: 100%;
+    height: 100%;
+}
+nav{
+    width: 100%;
+    height: 80px;
+    background-color: blue;
+}
+
+.laptopBox{
+    margin: -80px;
+    padding: 100px 0 60px 0;
+    width: 927px;
+    height: 530.297px;
+}
+.violetBackground{
+        margin: 0;
+        padding: 0;
+        z-index: 1;
+        width: 927px;
+        height: 530.297px;
+}
+.laptop{
+    margin: 10px;
+    align-content: center;
+    z-index: 3;
+    transform: scale(-100S);
+    width: -1000px;
+    height: -1000px;
+}
+
+.reviewBox{
+    margin: 0;
+    padding: 60px 40px 60px 40px;
+    width: 847px;
+    height: 386.188x;
+    background-color: chartreuse;
+}
+
+.whatIsKast{
+    margin: 0%;
+    padding: 90px 0 90px 0;
+    width: 927px;
+    height: 384px;
+    background-color: coral;
+}
