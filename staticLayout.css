@@ -12,21 +12,73 @@ html{
 /* nav{
 
 } */
-nav, ol{
-    display: flex;
+nav {
+    /* display: flex; */
     width: 100vw;
     height: 90px;
     top: 0;
     z-index: 1;
+    position: fixed; 
+    color: white;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+ol{
+    display: flex;
+    flex-direction: row;
+    /* max-width: 500px; */
     font-family: 'Roboto', sans-serif;
-    font-size: 20px;
-    /* background-color: blue; */
-    position: fixed;
+    font-size: 16px;
+    line-height: 28px;
     text-decoration: none;
     list-style-type: none;
-    text-align: right;
+    text-align: right; 
+    /* justify-content: space-between;  */
     justify-content: flex-end;
-    /* justify-content: space-between; */
+    margin-right: 30px;
+    margin-top: 25px;
+}
+li{
+    padding: 0 20px;
+}
+
+.dropdown{
+    display: none;
+    position: absolute ;
+}
+
+.dropDownLinks{
+    text-decoration: none;
+    color: white;
+}
+
+.dropdownLinks:hover{
+    display: block;
+    background-color: white;
+}
+
+.navKastButton{
+    text-decoration: none;
+    color: white;
+    border: solid 1px white;
+    border-radius: 5%;
+    transition-duration: 0.2s;
+}
+.navKastButton:hover{
+    transform: scale(2);
+}
+
+.kastLogo{
+position: fixed;
+max-width: 201px;
+z-index: 1;
+float: left;
+margin-top: 9px;
+margin-left: 5px;
+transition-duration: 0.2s;
+}
+.kastLogo:hover{
+    transform: scale(1.05);
 }
 
 .laptopBox{
@@ -51,27 +103,22 @@ nav, ol{
 }
 
 .lBox{
-    /* display: flex; */
-    /* justify-content: flex-end; */
     padding: 0 30px;
-    /* max-width: 800px; */
-    /* padding-top: 100px;*/
-    
     margin-left: auto;
     margin-right: auto;
-    /* padding-left: auto; */
 }
 
 .laptop{
      top: 100px; 
      z-index: 2; 
-     width: 40%;
+     width: 42%;
      padding-top: 159px; 
-     padding-left: 470px;
+     padding-left: 410px;
     margin: 10px auto 30px;
     justify-content: center;
     align-items: center;
 } 
+
 
 #watchText h1{ 
         font-size: 48px;
@@ -87,39 +134,105 @@ nav, ol{
     text-align: center;
     width: 35%;
     font-size: 20px;
+    line-height: 1.4;
 }
 
-#kastTopButton{
-    text-align: center;
+.kastButton {
+    display: flex;
+    /* text-align: center; */
     font-size: 18px;
+    margin-top: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0 16;
     border-style: solid;
+    border-color: rgba(254, 144, 0,0); 
     background-color: #fe9000;
-
+    max-width: 210px;
+    max-height: 40px;
+    font-weight: 700;
+    letter-spacing: 1.44px;
+    text-transform: uppercase;
+    border-radius: 2%;
+    text-decoration: none;
+    list-style-type: none;
+    align-items: center;
+    justify-content: center;
+    transition-duration: 0.3s;
+}
+.kastButton:hover{
+    transform: scale(1.01);
 }
 
 .reviewBox{
     margin: 0;
-    padding: 110px 0px 110px 0px;
+    /* padding: 110px 0px 110px 0px; */
     width: 100vw;
     height: 430px;
     background-color: white;
-    max-width: 215px;
+    padding-top: 110px;
+    padding-bottom: 110px;
+    /* max-width: 215px; */
+    text-align: center;
+    color:#434146;
+    /* display: flex; */
+}
+.reviewLogos{
+    display: grid;
+    grid-auto-columns: 1fr;
+    grid-template-columns: 1fr 1fr 1fr;
+    /* grid-template-rows: auto 1fr auto; */
+    margin-left: auto;
+    margin-bottom: 50px;
+    margin-right: auto;
+    max-width: 880px;
+    grid-column-gap: 140px;
+    grid-row-gap: 80px;    
+}
+.reviewBox h2{
+    margin-top: -10;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 50px;
+    font-size: 24px;
+    line-height: 36px;
+    font-weight: 500;
+    text-align: center;
+    font-weight: 600;
 }
 
-.whatIsKast{
+.quote{
+    text-align: center;
+    font-style: italic;
+    width: 100%;
+    font-size: 20px;
+}
+
+
+.whatBox{
     margin: 0%;
     padding: 90px 0 90px 0;
     width: 100vw;
     height: 384px;
-    background-color: coral;
     font-family: Roboto, sans-serif;
     background-image: url(./assets/green-bg.jpg);
     background-position: top;
     background-size: cover;
+    text-align: center;
 }
 
-.whatIsKast{
+.whatIsKast h2{
+        font-size: 48px;
+        margin: 0 0 60px;
+        font-weight: 500;
+        line-height: 48px;
+}
+.whatIsKast p{
         font-size: 20px;
-        justify-content: center;
-        align-items: center;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+        margin-bottom: 30px;
+        max-width: 640px;
+        line-height: 1.4;
 }
