@@ -39,7 +39,7 @@ ol{
     margin-top: 25px;
 }
 li{
-    padding: 0 20px;
+    padding: 0 25px;
 }
 
 .dropdown{
@@ -51,21 +51,30 @@ li{
     text-decoration: none;
     color: white;
 }
+.premium{
+    text-decoration: none;
+    color: white;
+}
 
-.dropdownLinks:hover{
-    display: block;
-    background-color: white;
+.premium:hover{
+    text-decoration: underline;
+    color: white;
 }
 
 .navKastButton{
     text-decoration: none;
+    text-transform: uppercase;
     color: white;
-    border: solid 1px white;
+    border: solid .5px white;
     border-radius: 5%;
-    transition-duration: 0.2s;
+    padding: 4px;
+    transition-duration: 0.3s;
+    font-size: 14px;
+    letter-spacing: 1.4px;
 }
 .navKastButton:hover{
-    transform: scale(2);
+    /* border: solid 5px; */
+    padding: 5px;
 }
 
 .kastLogo{
@@ -111,9 +120,9 @@ transition-duration: 0.2s;
 .laptop{
      top: 100px; 
      z-index: 2; 
-     width: 42%;
+     width: 40%;
      padding-top: 159px; 
-     padding-left: 410px;
+     padding-left: 460px;
     margin: 10px auto 30px;
     justify-content: center;
     align-items: center;
@@ -154,14 +163,18 @@ transition-duration: 0.2s;
     letter-spacing: 1.44px;
     text-transform: uppercase;
     border-radius: 2%;
-    text-decoration: none;
-    list-style-type: none;
     align-items: center;
     justify-content: center;
     transition-duration: 0.3s;
 }
 .kastButton:hover{
     transform: scale(1.01);
+}
+
+.kastButton p a{
+    text-decoration: none;
+    list-style-type: none;
+    color: white;
 }
 
 .reviewBox{
